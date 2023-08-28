@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:news_app/Services/ArticleModel.dart';
 
 import '../Services/NewsService.dart';
-import 'FilteredPage.dart'; // Import your ArticleModel class
+import 'FilteredPage.dart'; 
 
 class SearchBar1 extends StatefulWidget {
   final List<ArticleModel1> allArticles;
@@ -53,7 +53,7 @@ print(widget.allArticles);
       padding: const EdgeInsets.all(8.0),
       child: TextField(
         style: TextStyle(color: Colors.black),
-        onSubmitted: _onSearchSubmitted, // Call onSubmitted when user submits
+        onSubmitted: _onSearchSubmitted, 
         decoration: InputDecoration(
           hintText: 'Search...',
           hintStyle: TextStyle(color: Colors.grey),
