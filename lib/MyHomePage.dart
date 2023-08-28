@@ -13,13 +13,13 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  List<ArticleModel1> allArticles = []; // Store all articles
-  List<ArticleModel1> filteredArticles = []; // Store filtered articles
+  List<ArticleModel1> allArticles = []; 
+  List<ArticleModel1> filteredArticles = []; 
 
   @override
   void initState() {
     super.initState();
-    start(); // Fetch news articles
+    start(); 
     print(allArticles);
 
   }
@@ -62,14 +62,14 @@ Future<void> start()async{
           SearchBar1(
             allArticles: allArticles,
 
-          ), // Use the SearchBar widget here
+          ), 
           Expanded(
             child: CustomScrollView(
               slivers: [
                 SliverToBoxAdapter(child: View1()),
                 View2(
                   category: 'general',
-                  articles: filteredArticles, // Pass filtered articles to View2
+                  articles: filteredArticles, 
                 ),
               ],
             ),
